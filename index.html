@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Responsive Layout</title>
+<style>
+/********** Base styles **********/
+* {
+  box-sizing: border-box ;
+  padding: 10px;
+  color: white;
+}
+h1 {
+  margin-bottom: 15px;
+color: black;
+text-align: center;
+margin-bottom: 20px;
+}
+.p09 {
+  border: 5px solid black;
+  background-color: grey;
+  width: 100%;
+  height: 150px;
+  margin-right: auto;
+  padding-left: 3px;
+  margin-bottom: auto;
+  margin-top: auto;
+  font-family: Helvetica;
+  color: white;
+
+}
+
+/* Simple Responsive Framework. */
+.row {
+  
+  height: 100%;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) { .col-lg-4 {
+    float: left;
+    border: 1px solid; 
+    padding-inline: 20px;
+  }
+  .col-lg-4 {
+    width: 33%;
+    width: 33.33%;
+  }
+.p08{width: 150px;
+  height: 30px;
+  border: 2px solid black;
+  background-color: yellow;
+  margin-top: 0px;
+ position: relative;
+  top: -12px;
+  right: -200px;}
+  .lp{position: fixed;padding-left: 0px;padding-right: 20px;}
+  .lp2{position: fixed;padding-left: 0px;padding-right: 20px;margin-top: 11px}
+  .lp3{position: fixed;padding-left: 0px;padding-right: 20px;margin-top: 11px}
+  .p01{background-color: pink;color: black;}
+  .p02{background-color: red;color: white;}
+  .p03{background-color: yellow;color: black;}
+}
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {.col-md-6, .col-md-12 {
+    float: left;
+    border: 1px solid; green;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+}
+.p08{width: 150px;
+  height: 30px;
+  border: 1px solid black;
+  margin-top: 0px;
+  background-color: yellow;
+ position: relative;
+  top: -10px;
+  right: -272px;}
+  .p07{}
+  .lp{position: fixed;padding-left: 0px;padding-right: 20px;}
+   .p01{background-color: pink;color: black;}
+   .lp2{position: fixed;padding-left: 0px;padding-right: 20px;margin-top: 11px}
+   .p02{background-color: red;color: white;}
+   .lp3{position: fixed;padding-left: 0px;padding-right: 20px;margin-top: 11px}
+   .p03{background-color: yellow;color: black;right: -726px;}
+  /********** Small devices only **********/
+@media (max-width: 767px) {.col-7 {
+  
+    border: 1px solid black;
+  }
+  .col-7 {
+    width: 100%;}
+  
+  .p08{width: 100px;
+  height: 20px;
+  border: 1px solid black;
+  margin-top: 0px;
+  background-color: yellow;
+ position: relative;
+  top: -7px;
+  right: -90px;}
+   .lp{position: fixed;padding-left: 0px;padding-right: 20px;}
+   .p01{background-color: pink;color: black;}
+   .lp2{position: fixed;padding-left: 0px;padding-right: 20px;margin-top: 11px}
+   .p02{background-color: red;color: white;}
+   .lp3{position: fixed;padding-left: 0px;padding-right: 20px;margin-top: 11px}
+   .p03{background-color: yellow;color: black;right: -726px;}
+
+  
+</style>
+</head>
+<body>
+<h1>Our Menu</h1>
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-7"><div class="p09"><div class="lp"> <br>lorem ipsum dolor sit omet,consectetur<br> adipisicing elit,sed do elusmod ternpor incididunt <br>ut labour et dolore magina aliqa.Ut enim ad <br>minim verniam, quis nostrud exercitation ullamco <br>laboris nisi utaliquip ex ea commado consequat</div><div class="p08 p01">Chicken</div></div></div>
+  <div class="col-lg-4 col-md-6 col-7"><div class="p09"><div class="lp2">lorem ipsum dolor sit omet, consectetur<br>adipisicing elit,sed do eiusmod tempor<br>incidient ut labour et dolore magna aliqua.Ut<br>enim ad minim veniam,quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo<br>consequat</div><div class="p08 p02">Beef</div></div></div>
+  <div class="col-lg-4 col-md-12 col-7"><div class="p09"><div class="lp3">lorem ipsum dolor sit amet,consectetur<br>adipisicing elit,sed do eiusmod tempor<br>incididunt ut labore et dolore magna aliqua. Ut<br>enim ad minim veniam , quis nostrud exercitation<br>ullamco laboris nisi ut aliquip ex ea commodo<br>consequat.</div><div class="p08 p03 ">Sushi</div></div></div>
+  
+</div>
+
+</body>
+</html>
